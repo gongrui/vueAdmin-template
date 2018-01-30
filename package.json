@@ -5,7 +5,7 @@
   "description": "A vue admin template with Element UI & axios & iconfont & permission control & lint",
   "author": "Pan <panfree23@gmail.com>",
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress  --host 0.0.0.0 --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
     "build:report": "npm_config_report=true node build/build.js",
@@ -45,6 +45,7 @@
     "file-loader": "1.1.5",
     "friendly-errors-webpack-plugin": "1.6.1",
     "html-webpack-plugin": "2.30.1",
+    "jade": "^1.11.0",
     "node-notifier": "5.1.2",
     "node-sass": "^4.7.2",
     "optimize-css-assets-webpack-plugin": "3.2.0",
